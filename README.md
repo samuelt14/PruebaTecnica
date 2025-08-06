@@ -97,11 +97,3 @@ Todos los archivos PDF y adjuntos se sirven bajo `/media/<archivo>` y están pro
 
 ---
 
-## Lógica de visibilidad de “Agregar gestión”
-
-El botón “Agregar gestión” solo se muestra si:
-
-- El usuario es **Administrador**, o  
-- El usuario es responsable de un compromiso dentro del acta
-
----
