@@ -36,8 +36,8 @@ Este proyecto es un módulo independiente para gestionar **actas, compromisos y 
 ### 1. Clona el repositorio
 
 ```bash
-git clone https://github.com/usuario/repo-actas.git
-cd repo-actas
+git clone https://github.com/samuelt14/PruebaTecnica.git
+cd PruebaTecnica
 ```
 
 ---
