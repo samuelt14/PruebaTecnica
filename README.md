@@ -1,10 +1,10 @@
-# 📝 Gestión de Actas y Compromisos – Prueba Técnica
+# Gestión de Actas y Compromisos – Prueba Técnica
 
 Este proyecto es un módulo independiente para gestionar **actas, compromisos y gestiones**, con autenticación basada en roles, protección de archivos adjuntos, validaciones y consumo desde una API propia.
 
 ---
 
-## ⚙️ Tecnologías utilizadas
+## Tecnologías utilizadas
 
 - **Backend**: Django + Django REST Framework
 - **Frontend**: React + Vite
@@ -12,7 +12,7 @@ Este proyecto es un módulo independiente para gestionar **actas, compromisos y 
 
 ---
 
-## 👤 Roles implementados
+## Roles implementados
 
 | Rol           | Permisos principales |
 |---------------|----------------------|
@@ -21,7 +21,7 @@ Este proyecto es un módulo independiente para gestionar **actas, compromisos y 
 
 ---
 
-## 🔐 Credenciales para pruebas
+## Credenciales para pruebas
 
 | Rol           | Correo                     | Contraseña    |
 |---------------|----------------------------|---------------|
@@ -91,24 +91,17 @@ frontend/
 
 ---
 
-## 🛡️ Protección de archivos
+## Protección de archivos
 
 Todos los archivos PDF y adjuntos se sirven bajo `/media/<archivo>` y están protegidos mediante autenticación por token. Solo usuarios autenticados pueden acceder.
 
 ---
 
-## 🧠 Lógica de visibilidad de “Agregar gestión”
+## Lógica de visibilidad de “Agregar gestión”
 
 El botón “Agregar gestión” solo se muestra si:
 
 - El usuario es **Administrador**, o  
 - El usuario es responsable de un compromiso dentro del acta
-
----
-
-## 📩 Contacto
-
-**Desarrollador:** [Tu nombre]  
-**Correo:** tuemail@correo.com
 
 ---
