@@ -32,7 +32,6 @@ export default function GestionForm({ compromisoId }) {
         token
       );
       setMsg('Gestión creada correctamente.');
-      // opcional: limpiar formulario
       setDate('');
       setDescription('');
       setFile(null);
