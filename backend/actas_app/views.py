@@ -1,5 +1,3 @@
-# backend/actas_app/views.py
-
 from rest_framework.views import APIView
 from rest_framework.response import Response
 from rest_framework import status, generics, permissions
@@ -39,7 +37,7 @@ class CustomAuthToken(APIView):
         token, _ = Token.objects.get_or_create(user=user)
         return Response({
             'token': token.key,
-            'role':  user.get_role_display()  # ✅ muestra "Usuario" o "Administrador"
+            'role':  user.get_role_display() 
         })
 
 
@@ -52,8 +50,6 @@ class ActaList(generics.ListAPIView):
         queryset = Acta.objects.all() if user.role == 'admin' else Acta.objects.filter(
             models.Q(created_by=user) | models.Q(compromisos__responsible=user)
         ).distinct()
-
-        # ✅ Filtros opcionales
         title       = self.request.query_params.get('title')
         status_param = self.request.query_params.get('status')
         date        = self.request.query_params.get('date')
